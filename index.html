@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+				
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>		
+body{
+background-color: #8098ff;
+
+
+}
+				
+				
+				.sidenav {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 55px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #5000ff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  margin-top: 1px;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 100vh) {
+  .sidenav {padding-top: 1px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.button { 
+				font: bold 15px Arial; 
+				text-decoration: none; 
+				background-color: #2600ff; 
+				color: #e3ff00; 
+				padding: 1px 4px 1px 4px; 
+				border-color:#f8ff00; 
+      border-style: solid; 
+      border-width: 2px; 
+      border-radius: 3px 10px;
+}
+
+marquee {
+				font-size:8px;
+}
+
+.top-left { 
+position: relative;
+width: 50px;
+height:50px;
+text-align: center;
+font-size: 35px;
+				border-radius: 2px;
+				border: 1px #fff solid;
+
+
+
+} 
+
+.top-right { 
+position: relative;
+width: 50px;
+height:50px;
+text-align: center;
+padding: 5px;
+font-size: 25px;
+color:#fff;
+				border-radius: 2px;
+				border: 1px #fff solid;
+
+
+} 
+
+.logo {
+position: relative;
+width: 250px;
+height:50px;
+text-align: center;
+				border-radius: 2px;
+				border: 1px #fff solid;
+
+}
+
+.menu {
+position: absolute; 
+margin-top: 45px;
+width: 100%;
+text-align: center;
+				
+}
+
+.container { 
+background-color:#fff;
+width: 100%; 
+height: 50px; 
+position: relative;
+margin-top: 0px;
+color:#000000;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+
+}
+
+.main-box{
+width: 100%; 
+height: 50px; 
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color:#fff;
+box-shadow: 0 8px 24px 0 rgba(255, 0, 0, 0.2);
+
+
+}
+
+.logoa {
+width: 100%; 
+height: 7%; 
+position: relative;
+text-align: center;
+
+
+}
+
+.delete {
+position: relative;
+text-align: center;
+font-size: 30px;
+width: 10%; 
+height: 50px; 
+
+
+}
+
+.box {
+width: 100%; 
+height: 50px; 
+position: relative;
+margin-top: 0px;
+border:1px red solid;
+} 
+
+
+
+footer{
+position: absolute; 
+top: 95%; 
+width: 100%;
+text-align: center;
+color:#000;
+font-size:8px;
+      				
+}
+
+.my-iframe {
+background-color:#000;
+width: 100vw;
+height: 93vh;
+position:absolute;
+top:50px;
+
+
+}
+
+.tv-box{
+position:absolute;
+top:60px;
+
+}
+
+</style>
+</head>
+
+<div id="mySidenav" class="sidenav">	
+<div class="main-box">				
+<div class="logoa"><img src="https://zemez.io/html/wp-content/uploads/sites/9/2018/01/logo.png" width="100px" height="50px"></div>
+
+<div class="delete" class="closebtn" onclick="closeNav()">&#10094;</div></div>
+<div class="tv-box">
+  <a href="todaylive.html"target="iframe1"><i class="fa fa-home"></i> Home</a>
+  <a href=""target="iframe1"><i class="fa fa-television"></i>Live Tv1</a>
+  <a href=""target="iframe1"><i class="fa fa-television"></i>Live Tv2</a>
+  <a href=""target="iframe1"><i class="fa fa-television"></i>Live Tv3</a>
+  <a href=""target="iframe1"><i class="fa fa-television"></i>Live Tv4</a>
+
+  
+ <a href=""><img src="https://static.playrummy.com/assets/img/apk_btn.png"width="170px" height="60px" alt=""></a>
+ 
+</div>  
+<footer>
+        <span>Website Owner; 2023 MgZinMinLwin | MYANMAR</span>
+</footer>
+
+</div>
+
+
+<div class="container">
+<div class="top-left" onclick="openNav()">&#9776;</div>
+
+<div class="logo"><img src="https://zemez.io/html/wp-content/uploads/sites/9/2018/01/logo.png" width="100px" height="50px"></div>
+
+<div class="top-right" onclick="history.back()">&ldca;</div>
+</div>
+
+
+</head>
+<body>
+<iframe name="iframe1" src="todaylive.html" class="my-iframe" frameborder="0" allowfullscreen height="100%" width="100%"></iframe>
+</body>
+<script>
+				
+function openNav() {
+  document.getElementById("mySidenav").style.width = "230px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</html>
